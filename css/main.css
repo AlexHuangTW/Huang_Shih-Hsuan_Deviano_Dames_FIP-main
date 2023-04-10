@@ -1,0 +1,713 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer
+    9.  Custom Queries
+    10. Tablet Queries
+    11. Desktop Queries 
+ */
+
+/* .box-color {
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin: 0;
+} */
+
+
+ /* 1. ---General Styles--- */
+
+/* remove list-style-type */
+
+li {
+	list-style-type: none;
+}
+
+/*html selectors*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000000;
+	/* font-size: 12px; */
+}
+
+/* Remove underlines from links */
+
+a {
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+
+input, textarea {
+	display: block;
+	margin: 0;
+	padding: 0;
+ }
+
+
+/* 2. header */
+
+#header-con-icon {
+	background-color: rgb(98, 187, 255);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+
+
+#header-box1-media a {
+	font-size: 1.3rem;
+	color: #000000;
+	/* margin: 10px 10px; */
+	padding: 10px 5px;
+}
+
+#header-box2-cart a {
+	font-size: 1.3rem;
+	color: #000000;
+	padding: 10px 5px;
+}
+
+#header-logo {
+	max-width: 180px;
+	/* margin-top: 20px; */
+ }
+
+#burger-btn {
+	width: 40px;
+	height: 40px;
+	background: url(../images/burger.svg) no-repeat center;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	transition: all .5s ease;
+	border: 0;
+	display: block;
+
+ }
+
+ #burger-btn.expanded {
+	transform: rotate(90deg);
+	z-index: 3;
+
+ }
+ 
+ #burger-con {
+	/* margin-top: 20px; */
+	/* margin-bottom: 20px; */
+	display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	background: #62BBFF;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+ }
+
+
+#main-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 50px 0;
+ }
+
+ #main-nav ul li {
+	margin: 20px 0;
+ }
+ 
+ #main-nav ul li a {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #ffffff;
+ }
+
+ /* 3. shop banner */
+ #banner-hero-con img {
+	grid-column: 1/-1;
+	grid-row: 1/1;
+	justify-self: center;
+ }
+ 
+ #bannershop {
+	height: auto;
+	object-fit: cover;
+	
+ }
+
+ /* 4.  beers title */
+
+ .beers-title {
+	background-color: #18191a;
+	border-bottom: 10px solid #343837;
+	height: 53px;
+	max-width: 100%;
+	margin-bottom: 30px;
+	/* margin-top: 20px; */
+}
+
+.beers-title img {
+	margin-top: 5px;
+	width: 40px;
+	height: 40px;
+}
+.beers-title h3 {
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: -30px;
+	margin-top: 5px;
+}
+
+
+/* 5. product */
+.product-image {
+
+	margin-bottom: 30px;
+	transition: transform 2s;
+	object-fit: cover;
+}
+
+.product-text {
+	margin-bottom: 20px;
+}
+
+.product-text h2 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+.read-btn {
+	background-color: #ffffff;
+	color: #000000;
+	border: solid 3px #62BBFF;
+	border-radius: 450%;
+	padding: 20px 10px;
+}
+
+.btn-parent {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#product-ale {
+	margin-top: -30px;
+	background-color: #DDDDDD;
+}
+
+#product-wheat {
+	margin-top: -30px;
+	background-color: #DDDDDD;
+}
+/* 6. choose us */
+#choose-us {
+	background: url(../images/b17415b2-a50c-4646-a0cb-4b287bf7fd30.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+
+#choose-us h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	/* align-items: center; */
+}
+
+#choose-us h3 {
+	margin-top: 30px;
+	font-size: 40px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+#footer-location h3 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* 7. footer */
+
+#footer-con {
+	background-color: rgb(98, 187, 255);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#footer-logo {
+	height: 80px;
+	margin-bottom: 80px;
+}
+
+#footer-nav li {
+	margin-top: 15px;
+}
+
+#footer-nav li a{
+	font-size: 1.2rem;
+	color: rgb(0, 0, 0);
+}
+
+
+
+#footer-social {
+	/* background-color: aqua; */
+	margin-top: 30px;
+	height: auto;
+	margin-bottom: 20px;
+	margin-top: 70px;
+	text-align: center;
+}
+
+#newsletter h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#footer-newsletter1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer-newsletter1 input, textarea {
+    padding: 12px;
+    border: 2px solid #d6d6d6;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    margin-bottom: 10px;
+    font: inherit;
+}
+
+#footer-newsletter1 input[type="submit"] {
+    width: 100px;
+    padding: 12px 12px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: all 200ms ease-in;
+	font-size: 15px;
+	margin-bottom: 20px;
+	
+}
+
+#footer-newsletter1 input[type="submit"]:hover {
+    background-color: #656565;
+	color: #ffffff;
+}
+
+#footer-media a {
+	color: #000000;
+	font-size: 20px;
+	margin: 0 20px;
+}
+
+#web-creater {
+	margin-left: 60px;
+	font-size: 13px;
+}
+
+/* start to contact page */
+
+#contact {
+	margin-bottom: 50px;
+}
+
+.purchaseTitle {
+	text-align: center;
+	font-size: 1.8rem;
+	margin-bottom: 30px;
+}
+
+
+
+.map {
+	display: flex;
+	max-width: 800px;
+	width: 100%;
+}
+
+.map iframe {
+	width: 100%;
+	height: 300px;
+	display: flex;
+}
+
+#finder {
+	max-width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#finder label {
+	font-size: 17px;
+	Font-Family: 'Slabo 13px', Serif;
+	text-transform: uppercase;
+}
+
+#finder input {
+	height: 60px;
+	width: auto;
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+#contact-form {
+
+	/* Remove as content will dictate height */
+	height: 480px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #62BBFF;
+	border: solid 2px #DDDDDD;
+}
+
+#contact-form h2 {
+	padding: 20px 0;
+	font-size: 20px;
+	text-align: center;
+	
+}
+
+#contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea {
+	padding: 15px;
+	border: solid 1px #cccccc;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin-bottom: 30px;
+	font: inherit;
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+	width: 100px;
+	padding: 16px 32px;
+	background-color: #A5A5A5;
+	color: #000000;
+	border: none;
+	transition: all 200ms ease-in;
+	align-self: center;
+	border-radius: 15%;
+}
+
+input[type="submit"]:hover {
+	border-radius: 0;
+	background-color: #000000;
+}
+
+
+
+ @media screen and (min-width: 768px) {
+
+	#main-header-icon a {
+		font-size: 1.3rem;
+		color: #000000;
+		margin: 0 15px;
+	}
+	
+	#main-header-icon a:hover {
+		color: #ffffff;
+		transition: all .5s ease-in-out;
+	}
+
+	#burger-btn {display: none;}
+
+	#burger-con.slide-toggle {display: none;}
+
+	#burger-con {
+		display: block;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#burger-con ul li {
+		/* border: none; */
+		display: inline;
+	 }
+
+	 #header-logo {
+		margin-top: 15px;
+		order: -1;
+	 }
+
+	 #main-nav ul li a {
+		display: inline;
+		color: #000000;
+		font-size: 1.5rem;
+	 }
+
+	 #burger-con ul li {
+		margin-right: 55px;
+	 }
+  
+	 #burger-con ul li:last-child {
+		margin-right: 0px;
+	 }
+
+	 #burger-con ul li a:hover {
+		color: #FF7F00;
+	 }
+  
+	 #main-nav {
+		/* background-color: #62BBFF; */
+		padding-left: 20px;
+		margin-top: 4%;
+		/* margin-bottom: 4%; */
+	 }
+  
+	 #main-nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	 }
+
+	 #bannershop {
+		height: auto;
+		object-position: 30%;
+	 }
+
+
+
+	.btn-parent {
+		margin-top: 20px;
+	}
+
+	#lagar-text {
+		order: -1;
+		margin-top: 50px;
+	}
+
+	#stout-text {
+		order: -1;
+		margin-top: 50px;
+	}
+
+	#ale-text {
+		margin-top: 50px;
+	}
+
+	#wheat-text {
+		margin-top: 50px;
+	}
+
+
+	#footer-logo {
+		width: 100%;
+		
+	}
+
+	#footer-social {
+		margin-top: -5px;
+	}
+
+	#footer-useful-link {
+		margin-top: -15px;
+	}
+
+	#web-creater {
+		
+		font-size: 1.1rem;
+		
+	}
+
+	#footer-media a {
+		font-size: 1rem;
+	}
+
+	#footer-media a:hover {
+		color: #ffffff;
+	}
+
+	#footer-nav a:hover {
+		color: #FF7F00;
+	}
+
+	footer .wave {
+		position: absolute;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background: url(../images/wave.png);
+		background-size: 1000px 100px;
+	}
+	
+	footer .wave#wave1 {
+		z-index: 1000;
+		opacity: 1;
+		bottom: 0;
+		animation: animatewave 4s linear infinite; 
+	}
+	
+	footer .wave#wave2 {
+		z-index: 999;
+		opacity: 0.5;
+		bottom: 10px;
+		animation: animatewave_02 4s linear infinite; 
+	}
+	
+	footer .wave#wave3 {
+		z-index: 1000;
+		opacity: 0.2;
+		bottom: 15px;
+		animation: animatewave 3s linear infinite; 
+	}
+	
+	footer .wave#wave4 {
+		z-index: 999;
+		opacity: 0.7;
+		bottom: 20px;
+		animation: animatewave_02 3s linear infinite; 
+	}
+	
+	@keyframes animatewave {
+		0% {
+			background-position-x: 1000px;
+		}
+		100% {
+			background-position-x: 0px;
+		}
+	}
+	
+	@keyframes animatewave_02 {
+		0% {
+			background-position-x: 0px;
+		}
+		100% {
+			background-position-x: 1000px;
+		}
+	}
+
+	/* start with contact */
+	#purchaseWrapper {
+		margin-bottom: 100px;
+	}
+
+}
+
+@media screen and (min-width: 1920px) {
+	#main-header {
+		background-color: #6f62ff;
+		height: 110px;
+	 }
+  
+	 #main-nav {
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 25px;
+	 }
+
+	 #burger-con ul li {
+		margin-right: 60px;
+	 }
+
+	 #main-nav ul li a {
+		font-size: 2rem;
+		
+	 }
+	 #header-box1-media a {
+		font-size: 2rem;
+
+	 }
+
+	 #header-box2-cart a {
+		font-size: 2rem;
+		
+	 }
+
+	 footer .wave {
+		position: absolute;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background: url(../images/wave.png);
+		background-size: 1000px 100px;
+	}
+	
+	footer .wave#wave1 {
+		z-index: 1000;
+		opacity: 1;
+		bottom: 0;
+		animation: animatewave 4s linear infinite; 
+	}
+	
+	footer .wave#wave2 {
+		z-index: 999;
+		opacity: 0.5;
+		bottom: 10px;
+		animation: animatewave_02 4s linear infinite; 
+	}
+	
+	footer .wave#wave3 {
+		z-index: 1000;
+		opacity: 0.2;
+		bottom: 15px;
+		animation: animatewave 3s linear infinite; 
+	}
+	
+	footer .wave#wave4 {
+		z-index: 999;
+		opacity: 0.7;
+		bottom: 20px;
+		animation: animatewave_02 3s linear infinite; 
+	}
+	
+	@keyframes animatewave {
+		0% {
+			background-position-x: 1000px;
+		}
+		100% {
+			background-position-x: 0px;
+		}
+	}
+	
+	@keyframes animatewave_02 {
+		0% {
+			background-position-x: 0px;
+		}
+		100% {
+			background-position-x: 1000px;
+		}
+	}
+}

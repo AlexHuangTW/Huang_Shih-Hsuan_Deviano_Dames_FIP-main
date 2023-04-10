@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Billy Beer</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7CSlabo+13px" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bf0a75058.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 class="hidden">Welcome to Craft Billy Beer</h1>
+    
+        <section id="header-con-icon">
+            <h2 class="hidden">header social media</h2>
+            <div id="main-header-icon" class="grid-con">
+                <div id="header-box1-media" class="col-start-1 col-end-3 m-col-start-2 m-col-end-5 xl-col-start-2 xl-col-end-5">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div id="header-box2-cart" class="col-start-4 col-end-5 m-col-start-10 m-col-end-13 xl-col-start-11 xl-col-end-13">
+                    <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="header-con">
+            <h2 class="hidden">Main Navigation</h2>
+            <header id="main-header" class="grid-con">
+                <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-13 xl-col-start-4 xl-col-end-10">
+                    <div id="burger-con">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Story</a>
+                            </li>
+                            <li>
+                                <a href="#">Brewing</a>
+                            </li>
+                            <li>
+                                <a class="" href="shop.html">Shop</a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div id="header-logo" class="col-start-1 col-end-3 m-col-start-2 m-col-end-4 xl-con-start-1 xl-con-end-3">
+                    <a href="index.html"><img src="images/billybeer_logo2.svg" alt="logo"></a>
+                </div>
+                <button id="burger-btn" class="col-start-4 col-end-5"></button>
+
+            </header>
+        </section>
+
+        <main>
+            <div id="purchaseWrapper" class="grid-con">
+                <section id="finder" class="col-span-full m-col-start-1 m-col-end-6 xl-col-start-1 xl-col-end-6">
+                    <h2 class="purchaseTitle">Checkout Our BILLY'S Near You!</h2>
+                    <form action="#" method="get" class="form">
+                        <div class="input">
+                            <label for="postalCode">Find A store Near You</label>
+                            <input type="text" placeholder="Postal Code" pattern="[A-Za-z][0-9][A-Za-z]\s?[0-9][A-Za-z][0-9]" name="postalCode" id="postalCode" required>
+                        </div>
+    
+                    </form>
+                    <div class="map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBhBDbP6vFGtldCNKtX4wnA1GPuP8167OY&q=beer" allowfullscreen></iframe></div>
+                    <!-- <img src="./images/Capture.jpg" alt="map"> -->
+                </section>
+                <section id="contact" class="col-span-full m-col-start-7 m-col-end-12 xl-col-start-6 xl-col-end-11">
+                    <h2 class="purchaseTitle">LOOKING FOR Billy's Beer?</h2>
+                    <p>Get in touch with me via social media or email. <br> We will respond as soon as we can. Thank you!</p>
+                    <div id="contact-form" class="box-color2">
+                        <h2>Contact Us</h2>
+                        <form action="email.php" method="POST" enctype="text/plain">
+                            <input name="fullName" type="text" placeholder="First & Last Name">
+                            <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                            <textarea name="msg" placeholder="Message"></textarea>
+                            <input name="submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </section>
+    
+            </div>
+
+        </main>
+        
+
+        
+    
+
+        <footer id="footer-con">
+            <div id="wave-animation">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            
+            <div class="grid-con" id="footer">
+                <div id="footer-logo" class="col-start-2 col-end-4 m-col-start-6 m-col-end-8 xl-col-stat-6 xl-col-end-8">
+                    <img src="images/billybeer_logo2.svg" alt="logo">
+                </div>
+
+                <div id="footer-location" class="col-start-1 col-end-3 m-col-start-2 m-col-end-5 xl-col-start-1 xl-col-end-4">
+                    <h2 class="hidden">Footer Nav</h2>
+                    <h3>Opening Hours:</h3>
+                    <ul>
+                        <li>Monday 11:00 AM - 8:00 PM</li>
+                        <li>Tuesday 11:00 AM - 8:00 PM</li>
+                        <li>Wednesday 11:00 AM - 8:00 PM</li>
+                        <li>Thursday 11:00 AM - 8:00 PM</li>
+                        <li>Friday 11:00 AM - 8:00 PM</li>
+                        <li>Saturday 11:00 AM - 8:00 PM</li>
+                        <li>Sunday 11:00 AM - 8:00 PM</li>
+                    </ul>
+            </div>
+
+
+                <nav id="footer-useful-link" class="col-start-3 col-end-5 m-col-start-1 m-col-start-6 m-col-end-9 xl-col-start-5 xl-col-end-8">
+                    <h3 class="hidden">Footer Nav</h3>
+                    <ul id="footer-nav">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Sales and Refunds</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+                </nav>
+
+                <div id="footer-social" class="col-span-full m-col-start-9 m-col-end-13 xl-col-start-10 xl-col-end-13">
+                    <div id="newsletter">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div id="footer-newsletter1">
+                        <form action="email.php" method="POST" enctype="text/plain">
+                            <input name="contactInfo" type="text" required placeholder="Email">
+        
+                            <input class="footer-newsletter1_submit" name="submit" type="submit" value="Sign-up">
+                        </form>
+                    </div>
+                    <div id="footer-media">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div id="web-creater" class="col-span-full m-col-start-5 m-col-end-11 xl-col-start-4 xl-col-end-9">
+                    <span>© Copyright 2023 Created by Billy Beer</span>
+                </div>
+            </div>
+        </footer>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        opacity: .4;
+      }
+
+      .cls-2 {
+        fill: #f9bd0f;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="24" y1="27.22" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".09" stop-color="#fff" stop-opacity=".97"/>
+      <stop offset=".22" stop-color="#fff" stop-opacity=".88"/>
+      <stop offset=".38" stop-color="#fff" stop-opacity=".74"/>
+      <stop offset=".57" stop-color="#fff" stop-opacity=".54"/>
+      <stop offset=".79" stop-color="#fff" stop-opacity=".29"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path class="cls-2" d="m48,24c0,13.26-10.75,24-24,24S0,37.25,0,24,10.75,0,24,0s24,10.74,24,24Z"/>
+    <polygon class="cls-3" points="24 10 27.94 20.16 39 20.7 30.37 27.51 33.27 38 24 32.05 14.73 38 17.63 27.51 9 20.7 20.06 20.16 24 10"/>
+  </g>
+  <path class="cls-1" d="m24.06,0C11.8,0,1.69,9.2.24,21.07c1.96,4.21,7.66,10.24,23.82,2.17,16.89-8.43,18.82-5.57,23.7-3.06C45.93,8.74,36.02,0,24.06,0Z"/>
+</svg>

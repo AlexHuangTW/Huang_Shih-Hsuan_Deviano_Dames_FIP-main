@@ -48,6 +48,10 @@ a {
 	transition: all .5s ease-in-out;
 }
 
+button {
+	cursor: pointer;
+}
+
 input, textarea {
 	display: block;
 	margin: 0;
@@ -195,11 +199,19 @@ input, textarea {
 }
 
 
-.read-btn {
+.read-btn-white {
 	background-color: #ffffff;
 	color: #000000;
 	border: solid 3px #62BBFF;
-	border-radius: 450%;
+	border-radius: 50%;
+	padding: 20px 10px;
+}
+
+.read-btn-grey {
+	background-color: #DDDDDD;
+	color: #000000;
+	border: solid 3px #62BBFF;
+	border-radius: 50%;
 	padding: 20px 10px;
 }
 
@@ -317,11 +329,12 @@ input, textarea {
 	font-size: 15px;
 	margin-bottom: 20px;
 	
+	
 }
 
 #footer-newsletter1 input[type="submit"]:hover {
-    background-color: #656565;
-	color: #ffffff;
+    background-color: #ffffff;
+	color: #000000;
 }
 
 #footer-media a {
@@ -421,19 +434,21 @@ input, textarea {
 
 input[type="submit"] {
 	width: 100px;
-	padding: 16px 32px;
-	background-color: #A5A5A5;
+	padding: 12px 12px;
+	background-color: #ffffff;
 	color: #000000;
 	border: none;
 	transition: all 200ms ease-in;
 	align-self: center;
-	border-radius: 15%;
+
 }
 
 input[type="submit"]:hover {
-	border-radius: 0;
 	background-color: #000000;
+	color: #ffffff;
 }
+
+
 
 
 
@@ -512,22 +527,30 @@ input[type="submit"]:hover {
 		margin-top: 20px;
 	}
 
+	.center-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	#lagar-text {
 		order: -1;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
+
+	
 
 	#stout-text {
 		order: -1;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 
 	#ale-text {
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 
 	#wheat-text {
-		margin-top: 50px;
+		margin-top: 80px;
 	}
 
 
@@ -618,16 +641,25 @@ input[type="submit"]:hover {
 		}
 	}
 
-	/* start with contact */
 	#purchaseWrapper {
 		margin-bottom: 100px;
 	}
+
+	.read-btn-white:hover {
+		background-color: #C7E7FF;
+	}
+
+	.read-btn-grey:hover {
+		background-color: #C7E7FF;
+	}
+
+
 
 }
 
 @media screen and (min-width: 1920px) {
 	#main-header {
-		background-color: #6f62ff;
+		
 		height: 110px;
 	 }
   
@@ -709,5 +741,78 @@ input[type="submit"]:hover {
 		100% {
 			background-position-x: 1000px;
 		}
+	}
+
+	.read-btn-white:hover {
+		background-color: #C7E7FF;
+	}
+	
+	.read-btn-grey:hover {
+		background-color: #C7E7FF;
+	}
+
+	#contact {
+		margin-top: 70px;
+	}
+
+	#lagar-text h2 {
+		font-size: 3rem;
+		
+	}
+
+	#lagar-text span {
+		font-size: 1.5rem;
+		
+	}
+
+	#stout-text h2 {
+		font-size: 3rem;
+		
+	}
+
+	#stout-text span {
+		font-size: 1.5rem;
+	
+		
+	}
+
+	#ale-text h2 {
+		font-size: 3rem;
+		
+	}
+
+	#ale-text span {
+		font-size: 1.5rem;
+
+	
+	}
+
+	#wheat-text h2 {
+		font-size: 3rem;
+
+	}
+
+	#wheat-text span {
+		font-size: 1.5rem;
+
+	}
+
+
+	#lagar-text {
+	
+		margin-top: 80px;
+	}
+
+	#stout-text {
+
+		margin-top: 80px;
+	}
+
+	#ale-text {
+		margin-top: 80px;
+	}
+
+	#wheat-text {
+		margin-top: 80px;
 	}
 }

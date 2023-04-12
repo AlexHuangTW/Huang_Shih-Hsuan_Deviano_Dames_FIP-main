@@ -218,6 +218,12 @@ input, textarea {
 	
 }
 
+.btn-1:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(255, 139, 31, 0.5), -10px -10px 25px 0 rgba(255, 71, 39, 0.5), 
+    -10px 10px 25px 0 rgba(255, 71, 39, 0.5);
+}
+
 #brew-products {
 	background-color: #ffffff;
 }
@@ -507,6 +513,14 @@ input, textarea {
 	margin-bottom: 30px;
 	transition: transform 2s;
 	object-fit: cover;
+}
+
+.product-image a img {
+	transition: transform 0.3s;
+}
+
+.product-image a img:hover {
+	transform: rotate(20deg);
 }
 
 .product-text {
@@ -1084,15 +1098,19 @@ input[type="submit"]:hover {
 
 
 	
-.award-icons h2 {
-	font-size: 40px;
-	margin: 10px 0;
-}
+	.award-icons h2 {
+		font-size: 40px;
+		margin: 10px 0;
+	}
 
-.award-icons h3 {
-	font-size: 20px;
-	margin-bottom: 50px;
-}
+	.award-icons h3 {
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+
+	#video {
+		margin-top: -10px;
+	}
 
 }
 
